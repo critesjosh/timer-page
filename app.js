@@ -5,7 +5,7 @@ var upload = multer();
 var path = require('path');
 var request = require('request');
 var mongo = require('mongodb').MongoClient,
-    mongodb_link = require('./mongodb.js')
+//    mongodb_link = require('./mongodb.js')
 routes = require('./routes/index')
 
 var app = express();
