@@ -1,0 +1,13 @@
+body {
+  font-family: Lato;
+  text-align: center;
+}
+
+.question, .answer {
+  line-height: 25vh;
+}
+
+textarea {
+  width: 50%;
+  height: 300px;
+}

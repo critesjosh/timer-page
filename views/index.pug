@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="a form to make sure you are on track">
+    <meta name="author" content="josh crites">
+    <title>What's going on?</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/main.css" />
+  </head>
+  <body>
+      #form
+        if form
+          p=form
+        else  
+          div
+            div.question
+              p(id="firstQuestion") What are you doing?
+              p(id="secondQuestion" style="display: none;") What have you learned during this work session?
+              p(id="thirdQuestion" style="display: none;") How has this helped you move closer to achieving your goals?
+            div.answer
+              <form method="POST" action="http://localhost:8080/save_answers">
+                <textarea id="firstAnswer" name="first"></textarea>
+                <textarea id="secondAnswer" name="second" style="display: none;"></textarea>
+                <textarea id="thirdAnswer" name="third" style="display: none;"></textarea>
+                div
+                  button(
+                    id="button3"
+                    type='submit'
+                    style="display: none;"
+                    ) Next
+              </form>
+              div.btn  
+                button(
+                  id="button1"
+                  ) Next
+                button(
+                  id="button2"
+                  style="display: none;"
+                  ) Next  
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="public/js/script.js"></script>
+  </body>
+</html>
