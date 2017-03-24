@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "Josh's Tomato",
+  "version": "1.0",
+
+  "description": "Remember to take a break, and note your great ideas.",
+
+  "icons": {
+    "48": "icons/timer-icon.png"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icons/timer-icon.png"
+    },
+  "permissions": [
+    "tabs",
+    "background",
+    "storage",
+    "http://localhost:8080/",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
